@@ -151,7 +151,8 @@ def overview(queue_name, page):
         queue = Queue(queue_name)
 
     return render_template(
-        'rq_dashboard/dashboard.html',
+        # 'rq_dashboard/dashboard.html',
+        'rq_dashboard_material_design/dashboard.html',
         workers=Worker.all(),
         queue=queue,
         page=page,
